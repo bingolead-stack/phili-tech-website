@@ -24,7 +24,7 @@ export default function CTA() {
             Ready to <span className="gradient-text">Transform</span> Your Business?
           </h2>
           <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            Let's discuss how our technology solutions can drive innovation and growth for your organization.
+            Let&apos;s discuss how our technology solutions can drive innovation and growth for your organization.
           </p>
           <Link
             href="/contact"

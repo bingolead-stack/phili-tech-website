@@ -18,7 +18,7 @@ export default function Team() {
             Join Our <span className="gradient-text">Team</span>
           </h2>
           <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">
-            We're always looking for talented individuals who share our passion for innovation and excellence. 
+            We&apos;re always looking for talented individuals who share our passion for innovation and excellence. 
             Explore opportunities to grow your career with us.
           </p>
           <Link

@@ -29,7 +29,7 @@ export default function ContactHero() {
           transition={{ duration: 0.6 }}
           className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6"
         >
-          Let's <span className="gradient-text">Connect</span>
+          Let&apos;s <span className="gradient-text">Connect</span>
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,7 @@ export default function ContactHero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto"
         >
-          Have a project in mind? We'd love to hear from you.
+          Have a project in mind? We&apos;d love to hear from you.
         </motion.p>
       </div>
     </section>

@@ -24,14 +24,14 @@ export default function Story() {
               deserves access to world-class technology solutions.
             </p>
             <p>
-              Today, we've grown into a trusted partner for hundreds of organizations worldwide, helping them 
+              Today, we&apos;ve grown into a trusted partner for hundreds of organizations worldwide, helping them 
               navigate the complexities of digital transformation. Our commitment to excellence, combined with 
               our deep technical expertise, has enabled us to deliver solutions that not only meet but exceed 
-              our clients' expectations.
+              our clients&apos; expectations.
             </p>
             <p>
-              What sets us apart is our unwavering dedication to understanding our clients' unique challenges 
-              and crafting tailored solutions that drive real business value. We don't just implement technology—we 
+              What sets us apart is our unwavering dedication to understanding our clients&apos; unique challenges 
+              and crafting tailored solutions that drive real business value. We don&apos;t just implement technology—we 
               transform businesses, empower teams, and create lasting impact.
             </p>
           </div>

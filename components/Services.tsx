@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Cloud, Code, Database, Shield, Zap, Globe } from "lucide-react";
+import { Cloud, Code, Database, Shield, Zap, Globe, type LucideIcon } from "lucide-react";
 import type { Service } from "@/types";
 
 const services: Service[] = [
@@ -37,7 +37,7 @@ const services: Service[] = [
   },
 ];
 
-const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
+const iconMap: Record<string, LucideIcon> = {
   Cloud,
   Code,
   Database,
