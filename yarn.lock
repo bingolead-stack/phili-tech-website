@@ -2927,7 +2927,7 @@ typed-array-length@^1.0.7:
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
 
-typescript@5.3.0:
+typescript@6.0.0-dev.20260117:
   version "6.0.0-dev.20260117"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-6.0.0-dev.20260117.tgz#7c494a1e4c0a974cad377ccc8e1f6a702478f971"
   integrity sha512-mFiiaBC2etbR00TdKbAgyMcGz0EtdYXKXsX23SwEhdqZ0jmwkfo3XDnqqEI1iC3YL1e8Mtvd5KFEsEGw2ohCHw==
