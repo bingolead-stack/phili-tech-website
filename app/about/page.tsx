@@ -6,11 +6,11 @@ import Leadership from "@/components/Leadership";
 import Team from "@/components/Team";
 
 export const metadata: Metadata = {
-  title: "About Us - Philitech",
-  description: "Learn about Philitech's mission, vision, values, and leadership team. Pioneering the future of technology.",
+  title: "About Us - Infralyft LLC",
+  description: "Learn about Infralyft LLC's mission, vision, values, and leadership team. Pioneering the future of technology.",
   openGraph: {
-    title: "About Us - Philitech",
-    description: "Learn about Philitech's mission, vision, values, and leadership team.",
+    title: "About Us - Infralyft LLC",
+    description: "Learn about Infralyft LLC's mission, vision, values, and leadership team.",
   },
 };
 

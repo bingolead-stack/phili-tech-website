@@ -10,13 +10,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Branding */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold gradient-text">Philitech</h3>
+            <h3 className="text-xl font-bold gradient-text">Infralyft LLC</h3>
             <p className="text-gray-400 text-sm">
               Innovating beyond boundaries. Empowering businesses with cutting-edge technology solutions.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com/company/philitech"
+                href="https://linkedin.com/company/infralyft"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-brand-cyan transition-colors"
@@ -25,7 +25,7 @@ export default function Footer() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://twitter.com/philitech"
+                href="https://twitter.com/infralyft"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-brand-cyan transition-colors"
@@ -34,7 +34,7 @@ export default function Footer() {
                 <Twitter size={20} />
               </a>
               <a
-                href="mailto:info@philitech.com"
+                href="mailto:admin@infralyft.com"
                 className="text-gray-400 hover:text-brand-cyan transition-colors"
                 aria-label="Email"
               >
@@ -82,18 +82,18 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-start space-x-2">
                 <MapPin size={16} className="mt-1 flex-shrink-0" />
-                <span>123 Innovation Drive, Tech City, TC 12345</span>
+                <span>Cerritos, California, USA</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={16} className="flex-shrink-0" />
-                <a href="tel:+1234567890" className="hover:text-brand-cyan transition-colors">
-                  +1 (234) 567-890
+                <a href="tel:+13239164730" className="hover:text-brand-cyan transition-colors">
+                  +1 (323) 916-4730
                 </a>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={16} className="flex-shrink-0" />
-                <a href="mailto:info@philitech.com" className="hover:text-brand-cyan transition-colors">
-                  info@philitech.com
+                <a href="mailto:admin@infralyft.com" className="hover:text-brand-cyan transition-colors">
+                  admin@infralyft.com
                 </a>
               </li>
               <li className="flex items-start space-x-2">
@@ -106,7 +106,7 @@ export default function Footer() {
 
         <div className="mt-8 pt-8 border-t border-brand-navy-light">
           <p className="text-center text-gray-400 text-sm">
-            © {currentYear} Philitech. All rights reserved.
+            © {currentYear} Infralyft LLC. All rights reserved.
           </p>
         </div>
       </div>

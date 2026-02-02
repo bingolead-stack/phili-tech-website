@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://philitech.com/sitemap.xml',
+    sitemap: 'https://infralyft.com/sitemap.xml',
   }
 }

@@ -19,7 +19,7 @@ export default function Story() {
           <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
             <p>
               Founded with a vision to bridge the gap between cutting-edge technology and business excellence, 
-              Philitech has been at the forefront of digital innovation for over a decade. We started as a 
+              Infralyft LLC has been at the forefront of digital innovation for over a decade. We started as a 
               small team of passionate technologists who believed that every business, regardless of size, 
               deserves access to world-class technology solutions.
             </p>

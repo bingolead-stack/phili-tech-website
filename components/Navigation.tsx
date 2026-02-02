@@ -36,8 +36,19 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold gradient-text">Philitech</span>
+          <Link href="/" className="flex items-center space-x-3">
+            <div className="relative w-10 h-10 flex-shrink-0">
+              <img
+                src="/logo.png"
+                alt="Infralyft LLC Logo"
+                className="w-10 h-10 object-contain"
+                onError={(e) => {
+                  // Hide logo container if image doesn't exist
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+            </div>
+            <span className="text-2xl font-bold gradient-text">Infralyft</span>
           </Link>
 
           {/* Desktop Navigation */}

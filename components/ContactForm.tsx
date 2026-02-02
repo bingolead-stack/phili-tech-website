@@ -106,25 +106,25 @@ export default function ContactForm() {
     {
       icon: Mail,
       label: "Email",
-      value: "info@philitech.com",
-      href: "mailto:info@philitech.com",
+      value: "admin@infralyft.com",
+      href: "mailto:admin@infralyft.com",
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (234) 567-890",
-      href: "tel:+1234567890",
+      value: "+1 (323) 916-4730",
+      href: "tel:+13239164730",
     },
     {
       icon: MapPin,
       label: "Address",
-      value: "123 Innovation Drive, Tech City, TC 12345",
+      value: "Cerritos, California, USA",
       href: null,
     },
     {
       icon: Clock,
       label: "Business Hours",
-      value: "Mon-Fri: 9:00 AM - 6:00 PM EST",
+      value: "Mon-Fri: 9:00 AM - 6:00 PM PST",
       href: null,
     },
   ];

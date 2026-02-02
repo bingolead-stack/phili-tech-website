@@ -10,19 +10,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Philitech - Innovate Beyond",
+  title: "Infralyft LLC - Innovate Beyond",
   description: "Professional technology solutions and consulting services. Empowering businesses with cutting-edge innovation.",
   keywords: ["technology", "consulting", "innovation", "enterprise solutions", "digital transformation"],
-  authors: [{ name: "Philitech" }],
+  authors: [{ name: "Infralyft LLC" }],
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
-    title: "Philitech - Innovate Beyond",
+    title: "Infralyft LLC - Innovate Beyond",
     description: "Professional technology solutions and consulting services.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Philitech - Innovate Beyond",
+    title: "Infralyft LLC - Innovate Beyond",
     description: "Professional technology solutions and consulting services.",
   },
   robots: {

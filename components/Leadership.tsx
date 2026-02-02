@@ -42,7 +42,7 @@ export default function Leadership() {
             Our <span className="gradient-text">Leadership</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Meet the visionary leaders driving innovation at Philitech
+            Meet the visionary leaders driving innovation at Infralyft LLC
           </p>
         </motion.div>
 

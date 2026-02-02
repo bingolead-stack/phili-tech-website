@@ -1,6 +1,6 @@
-# Philitech Website
+# Infralyft LLC Website
 
-Professional website for Philitech, built with Next.js, TypeScript, and Tailwind CSS.
+Professional website for Infralyft LLC, built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Features
 
@@ -49,7 +49,7 @@ npm start
 ## Project Structure
 
 ```
-philitech-website/
+infralyft-website/
 ├── app/                    # Next.js App Router pages
 │   ├── about/             # About Us page
 │   ├── api/                # API routes
@@ -122,4 +122,8 @@ Submit contact form with validation and rate limiting.
 
 ## License
 
-© 2024 Philitech. All rights reserved.
+© 2024 Infralyft LLC. All rights reserved.
+
+## Logo Setup
+
+Add your company logo as `logo.png` in the `public/` directory. See `public/README.md` for details.

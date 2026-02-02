@@ -3,11 +3,11 @@ import ContactHero from "@/components/ContactHero";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Philitech",
-  description: "Get in touch with Philitech. Have a project in mind? We'd love to hear from you.",
+  title: "Contact Us - Infralyft LLC",
+  description: "Get in touch with Infralyft LLC. Have a project in mind? We'd love to hear from you.",
   openGraph: {
-    title: "Contact Us - Philitech",
-    description: "Get in touch with Philitech. Have a project in mind? We'd love to hear from you.",
+    title: "Contact Us - Infralyft LLC",
+    description: "Get in touch with Infralyft LLC. Have a project in mind? We'd love to hear from you.",
   },
 };
 
