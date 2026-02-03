@@ -37,18 +37,16 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-10 h-10 flex-shrink-0">
+            <div className="relative">
               <img
-                src="/logo.png"
+                src="/logo1.png"
                 alt="Infralyft LLC Logo"
-                className="w-10 h-10 object-contain"
+                className="h-10 object-contain"
                 onError={(e) => {
-                  // Hide logo container if image doesn't exist
                   e.currentTarget.style.display = 'none';
                 }}
               />
             </div>
-            <span className="text-2xl font-bold gradient-text">Infralyft</span>
           </Link>
 
           {/* Desktop Navigation */}
