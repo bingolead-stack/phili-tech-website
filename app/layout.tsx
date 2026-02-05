@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   keywords: ["technology", "consulting", "innovation", "enterprise solutions", "digital transformation"],
   authors: [{ name: "Infralyft LLC" }],
   icons: {
-    icon: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo-sm.png",
+    apple: "/logo-sm.png",
   },
   openGraph: {
     title: "Infralyft LLC - Innovate Beyond",
