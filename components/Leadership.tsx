@@ -20,7 +20,7 @@ const leaders: Leader[] = [
     bio: "Strategic partner supporting growth and innovation in technology ventures.",
     image: "/team/ryan-maglaqui.png",
     linkedin: "https://linkedin.com/in/ryan-maglaqui",
-    twitter: "https://twitter.com/ryanmaglaqui",
+    twitter: "https://x.com/MaglaquiRy73558",
   },
   {
     name: "Joseph Wadley",

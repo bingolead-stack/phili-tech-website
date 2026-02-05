@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Linkedin, Twitter, Mail, MapPin, Phone, Clock } from "lucide-react";
 
 export default function Footer() {
@@ -10,7 +11,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Branding */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold gradient-text">Infralyft LLC</h3>
+            <Link href="/" className="flex items-center space-x-2">
+              <div className="relative w-32 h-10">
+                <Image
+                  src="/logo1.png"
+                  alt="Infralyft LLC Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </Link>
             <p className="text-gray-400 text-sm">
               Innovating beyond boundaries. Empowering businesses with cutting-edge technology solutions.
             </p>
