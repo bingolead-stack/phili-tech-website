@@ -49,11 +49,12 @@ async function sendToTelegram(
 ): Promise<boolean> {
   try {
     const botToken = process.env.TELEGRAM_BOT_TOKEN;
-    const chatId = process.env.TELEGRAM_CHAT_ID;
+    // Support both channel username (e.g., @mychannel) and channel ID (e.g., -1001234567890)
+    const chatId = process.env.TELEGRAM_CHAT_ID || process.env.TELEGRAM_CHANNEL_ID;
 
     if (!botToken || !chatId) {
       console.error(
-        "Telegram bot token or chat ID not configured. Please set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID environment variables."
+        "Telegram bot token or chat ID/channel not configured. Please set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID (or TELEGRAM_CHANNEL_ID) environment variables."
       );
       return false;
     }

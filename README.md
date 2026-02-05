@@ -117,7 +117,11 @@ Submit contact form with validation and rate limiting. Form submissions are auto
 
 ## Telegram Bot Setup
 
-The contact form sends notifications to a Telegram bot. To set this up:
+The contact form sends notifications to a Telegram bot. You can send messages to either:
+- **Private chat** (only you see messages)
+- **Telegram channel/group** (all members can see messages)
+
+### Option 1: Send to Private Chat
 
 1. **Create a Telegram Bot:**
    - Open Telegram and search for [@BotFather](https://t.me/botfather)
@@ -131,14 +135,43 @@ The contact form sends notifications to a Telegram bot. To set this up:
    - Find the `"chat":{"id":` value in the response - this is your chat ID
 
 3. **Configure Environment Variables:**
-   - Copy `.env.example` to `.env.local`
-   - Add your bot token and chat ID:
+   ```
+   TELEGRAM_BOT_TOKEN=your_bot_token_here
+   TELEGRAM_CHAT_ID=your_chat_id_here
+   ```
+
+### Option 2: Send to Telegram Channel/Group (Recommended for Teams)
+
+1. **Create a Telegram Bot** (same as above)
+
+2. **Create a Telegram Channel or Group:**
+   - Create a new channel or group in Telegram
+   - Note the channel username (e.g., `@mychannel`) or get the channel ID
+
+3. **Add Bot as Administrator:**
+   - Go to your channel/group settings
+   - Add the bot as an administrator
+   - Make sure the bot has permission to post messages
+
+4. **Get Channel ID (if using ID instead of username):**
+   - Forward any message from your channel to [@userinfobot](https://t.me/userinfobot)
+   - Or use: `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates` after posting a message in the channel
+   - Channel IDs start with `-100` (e.g., `-1001234567890`)
+
+5. **Configure Environment Variables:**
+   - **Using channel username** (e.g., `@mychannel`):
      ```
      TELEGRAM_BOT_TOKEN=your_bot_token_here
-     TELEGRAM_CHAT_ID=your_chat_id_here
+     TELEGRAM_CHAT_ID=@mychannel
      ```
+   - **Using channel ID** (e.g., `-1001234567890`):
+     ```
+     TELEGRAM_BOT_TOKEN=your_bot_token_here
+     TELEGRAM_CHAT_ID=-1001234567890
+     ```
+   - You can also use `TELEGRAM_CHANNEL_ID` instead of `TELEGRAM_CHAT_ID` for clarity
 
-4. **Restart your development server** for changes to take effect
+6. **Restart your development server** for changes to take effect
 
 **Note:** The contact form will still work without Telegram configuration, but notifications won't be sent. Check your server logs for any configuration errors.
 
