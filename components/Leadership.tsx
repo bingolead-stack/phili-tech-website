@@ -11,24 +11,18 @@ const leaders: Leader[] = [
     role: "Chief Executive Officer",
     bio: "Visionary leader with 15+ years of experience in technology and business strategy.",
     image: "/team/ian-brown.png",
-    linkedin: "https://www.linkedin.com/in/ian-b-10b90699",
-    twitter: "https://twitter.com/ianbrown",
   },
   {
     name: "Ryan Manarang Maglaqui",
     role: "Strategic Partner",
     bio: "Strategic partner supporting growth and innovation in technology ventures.",
     image: "/team/ryan-maglaqui.png",
-    linkedin: "https://linkedin.com/in/ryan-maglaqui",
-    twitter: "https://x.com/MaglaquiRy73558",
   },
   {
     name: "Joseph Wadley",
     role: "Operating Manager",
     bio: "Operations expert focused on scaling businesses and optimizing processes for maximum efficiency.",
     image: "/team/joseph-wadley.png",
-    linkedin: "https://linkedin.com/in/josephwaldey",
-    twitter: "https://twitter.com/josephwaldey",
   },
 ];
 

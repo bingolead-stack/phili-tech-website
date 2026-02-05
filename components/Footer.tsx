@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com/company/infralyft"
+                href="https://www.linkedin.com/company/infralyft-llc"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-brand-cyan transition-colors"
@@ -34,7 +34,7 @@ export default function Footer() {
               >
                 <Linkedin size={20} />
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com/infralyft"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export default function Footer() {
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
-              </a>
+              </a> */}
               <a
                 href="mailto:admin@infralyft.com"
                 className="text-gray-400 hover:text-brand-cyan transition-colors"
