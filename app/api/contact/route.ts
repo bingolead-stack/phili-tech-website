@@ -43,6 +43,70 @@ function sanitizeInput(input: string): string {
   return input.trim().replace(/[<>]/g, "");
 }
 
+async function sendToTelegram(
+  data: ContactFormData,
+  ip: string
+): Promise<boolean> {
+  try {
+    const botToken = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
+
+    if (!botToken || !chatId) {
+      console.error(
+        "Telegram bot token or chat ID not configured. Please set TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID environment variables."
+      );
+      return false;
+    }
+
+    // Format the message using HTML for easier escaping
+    const message = `🔔 <b>New Contact Form Submission</b>
+
+👤 <b>Name:</b> ${escapeHtml(data.name)}
+📧 <b>Email:</b> ${escapeHtml(data.email)}
+${data.company ? `🏢 <b>Company:</b> ${escapeHtml(data.company)}` : ""}
+${data.phone ? `📞 <b>Phone:</b> ${escapeHtml(data.phone)}` : ""}
+🌐 <b>IP Address:</b> ${ip}
+
+💬 <b>Message:</b>
+${escapeHtml(data.message)}
+
+<i>Time: ${new Date().toLocaleString()}</i>`;
+
+    const telegramApiUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+    const response = await fetch(telegramApiUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: message,
+        parse_mode: "HTML",
+      }),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      console.error("Telegram API error:", errorData);
+      return false;
+    }
+
+    return true;
+  } catch (error) {
+    console.error("Error sending message to Telegram:", error);
+    return false;
+  }
+}
+
+function escapeHtml(text: string): string {
+  // Escape special characters for Telegram HTML parse mode
+  return text
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 export async function POST(request: NextRequest) {
   try {
     // Get client IP
@@ -111,15 +175,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Here you would typically:
-    // 1. Save to database
-    // 2. Send email notification
-    // 3. Send confirmation email to user
-    // For now, we'll just log it
-    console.log("Contact form submission:", sanitizedData);
+    // Send notification to Telegram bot
+    const telegramSent = await sendToTelegram(sanitizedData, ip);
 
-    // Simulate processing delay
-    await new Promise((resolve) => setTimeout(resolve, 500));
+    if (!telegramSent) {
+      console.error("Failed to send message to Telegram, but continuing...");
+      // Still return success to user, but log the error
+    }
 
     return NextResponse.json(
       {

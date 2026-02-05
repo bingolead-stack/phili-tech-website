@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Cloud, Code, Database, Shield, Zap, Globe, type LucideIcon } from "lucide-react";
+import { Cloud, Code, Database, Shield, Zap, Globe, Brain, type LucideIcon } from "lucide-react";
 import type { Service } from "@/types";
 
 const services: Service[] = [
@@ -35,6 +35,11 @@ const services: Service[] = [
     description: "Seamless integration of systems and platforms to streamline your business processes.",
     icon: "Globe",
   },
+  {
+    title: "AI & Emerging Technologies",
+    description: "Exploring and implementing cutting-edge AI agents and emerging technologies to unlock new possibilities for your business.",
+    icon: "Brain",
+  },
 ];
 
 const iconMap: Record<string, LucideIcon> = {
@@ -44,6 +49,7 @@ const iconMap: Record<string, LucideIcon> = {
   Shield,
   Zap,
   Globe,
+  Brain,
 };
 
 export default function Services() {

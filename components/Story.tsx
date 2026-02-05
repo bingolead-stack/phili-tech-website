@@ -34,6 +34,12 @@ export default function Story() {
               and crafting tailored solutions that drive real business value. We don&apos;t just implement technology—we 
               transform businesses, empower teams, and create lasting impact.
             </p>
+            <p>
+              As technology continues to evolve at an unprecedented pace, we remain committed to investigating and 
+              adopting emerging technologies—particularly AI agents and other innovative solutions—that can provide 
+              competitive advantages for our clients. Our passion for exploring new frontiers in technology ensures 
+              that we stay ahead of the curve and bring the latest innovations to every project we undertake.
+            </p>
           </div>
         </motion.div>
       </div>

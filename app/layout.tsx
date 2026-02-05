@@ -11,8 +11,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Infralyft LLC - Innovate Beyond",
-  description: "Professional technology solutions and consulting services. Empowering businesses with cutting-edge innovation.",
-  keywords: ["technology", "consulting", "innovation", "enterprise solutions", "digital transformation"],
+  description: "Professional technology solutions and consulting services. Empowering businesses with cutting-edge innovation, AI agents, and emerging technologies.",
+  keywords: ["technology", "consulting", "innovation", "enterprise solutions", "digital transformation", "AI", "artificial intelligence", "AI agents", "emerging technologies"],
   authors: [{ name: "Infralyft LLC" }],
   icons: {
     icon: "/logo-sm.png",
@@ -20,14 +20,14 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Infralyft LLC - Innovate Beyond",
-    description: "Professional technology solutions and consulting services.",
+    description: "Professional technology solutions and consulting services. Exploring AI agents and emerging technologies.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
     title: "Infralyft LLC - Innovate Beyond",
-    description: "Professional technology solutions and consulting services.",
+    description: "Professional technology solutions and consulting services. Exploring AI agents and emerging technologies.",
   },
   robots: {
     index: true,

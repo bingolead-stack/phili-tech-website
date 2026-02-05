@@ -17,7 +17,7 @@ const values = [
   {
     icon: Heart,
     title: "Values",
-    description: "Excellence, integrity, innovation, and client-centricity guide everything we do. We're committed to delivering exceptional value and building lasting partnerships.",
+    description: "Excellence, integrity, innovation, and client-centricity guide everything we do. We're committed to delivering exceptional value, building lasting partnerships, and actively exploring emerging technologies like AI agents to stay at the forefront of innovation.",
   },
 ];
 

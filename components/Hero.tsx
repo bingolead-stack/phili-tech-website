@@ -6,8 +6,8 @@ import { ArrowRight, TrendingUp, Users, Award } from "lucide-react";
 
 export default function Hero() {
   const stats = [
-    { value: "500+", label: "Clients Served", icon: Users },
-    { value: "10+", label: "Years Experience", icon: TrendingUp },
+    { value: "120+", label: "Clients Served", icon: Users },
+    { value: "15+", label: "Years Experience", icon: TrendingUp },
     { value: "99%", label: "Satisfaction Rate", icon: Award },
   ];
 
@@ -73,7 +73,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl sm:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto text-balance"
           >
-            Transform your business with our expert technology solutions and strategic consulting services.
+            Transform your business with our expert technology solutions, strategic consulting services, and exploration of cutting-edge innovations including AI agents and emerging technologies.
           </motion.p>
 
           {/* CTA Buttons */}

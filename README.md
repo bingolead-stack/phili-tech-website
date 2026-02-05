@@ -100,7 +100,7 @@ infralyft-website/
 
 ### POST /api/contact
 
-Submit contact form with validation and rate limiting.
+Submit contact form with validation and rate limiting. Form submissions are automatically sent to a configured Telegram bot.
 
 **Request Body:**
 ```json
@@ -114,6 +114,33 @@ Submit contact form with validation and rate limiting.
 ```
 
 **Rate Limit:** 5 requests per minute per IP
+
+## Telegram Bot Setup
+
+The contact form sends notifications to a Telegram bot. To set this up:
+
+1. **Create a Telegram Bot:**
+   - Open Telegram and search for [@BotFather](https://t.me/botfather)
+   - Send `/newbot` and follow the instructions
+   - Copy the bot token you receive
+
+2. **Get Your Chat ID:**
+   - Start a conversation with your bot
+   - Send any message to your bot
+   - Visit: `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`
+   - Find the `"chat":{"id":` value in the response - this is your chat ID
+
+3. **Configure Environment Variables:**
+   - Copy `.env.example` to `.env.local`
+   - Add your bot token and chat ID:
+     ```
+     TELEGRAM_BOT_TOKEN=your_bot_token_here
+     TELEGRAM_CHAT_ID=your_chat_id_here
+     ```
+
+4. **Restart your development server** for changes to take effect
+
+**Note:** The contact form will still work without Telegram configuration, but notifications won't be sent. Check your server logs for any configuration errors.
 
 ## Development
 
