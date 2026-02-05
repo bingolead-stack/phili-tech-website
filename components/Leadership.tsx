@@ -1,29 +1,34 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Linkedin, Twitter } from "lucide-react";
 import type { Leader } from "@/types";
 
 const leaders: Leader[] = [
   {
-    name: "Sarah Johnson",
+    name: "Ian Brown",
     role: "Chief Executive Officer",
     bio: "Visionary leader with 15+ years of experience in technology and business strategy.",
-    linkedin: "https://linkedin.com/in/sarahjohnson",
-    twitter: "https://twitter.com/sarahjohnson",
+    image: "/team/ian-brown.png",
+    linkedin: "https://www.linkedin.com/in/ian-b-10b90699",
+    twitter: "https://twitter.com/ianbrown",
   },
   {
-    name: "Michael Chen",
-    role: "Chief Technology Officer",
-    bio: "Tech innovator specializing in cloud architecture and enterprise solutions.",
-    linkedin: "https://linkedin.com/in/michaelchen",
-    twitter: "https://twitter.com/michaelchen",
+    name: "Ryan Manarang Maglaqui",
+    role: "Strategic Partner",
+    bio: "Strategic partner supporting growth and innovation in technology ventures.",
+    image: "/team/ryan-maglaqui.png",
+    linkedin: "https://linkedin.com/in/ryan-maglaqui",
+    twitter: "https://twitter.com/ryanmaglaqui",
   },
   {
-    name: "Emily Rodriguez",
-    role: "Chief Operating Officer",
-    bio: "Operations expert focused on scaling businesses and optimizing processes.",
-    linkedin: "https://linkedin.com/in/emilyrodriguez",
+    name: "Joseph Wadley",
+    role: "Operating Manager",
+    bio: "Operations expert focused on scaling businesses and optimizing processes for maximum efficiency.",
+    image: "/team/joseph-wadley.png",
+    linkedin: "https://linkedin.com/in/josephwaldey",
+    twitter: "https://twitter.com/josephwaldey",
   },
 ];
 
@@ -47,18 +52,53 @@ export default function Leadership() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {leaders.map((leader, index) => (
-            <motion.div
-              key={leader.name}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group p-8 rounded-xl bg-gradient-to-br from-brand-navy-light/50 to-brand-navy-dark/50 border border-brand-navy-light hover:border-brand-cyan/50 transition-all duration-300"
-            >
-              <div className="w-24 h-24 rounded-full bg-gradient-to-br from-brand-cyan to-brand-cyan-dark mx-auto mb-6 flex items-center justify-center text-3xl font-bold text-brand-navy-dark">
-                {leader.name.split(' ').map(n => n[0]).join('')}
-              </div>
+          {leaders.map((leader, index) => {
+            const LeaderAvatar = ({ leader }: { leader: Leader }) => {
+              const [imageError, setImageError] = useState(false);
+              const [imageLoaded, setImageLoaded] = useState(false);
+              const initials = leader.name.split(' ').map(n => n[0]).join('');
+
+              if (!leader.image || imageError) {
+                return (
+                  <span className="text-3xl font-bold text-brand-navy-dark">
+                    {initials}
+                  </span>
+                );
+              }
+
+              return (
+                <>
+                  {!imageLoaded && (
+                    <span className="text-3xl font-bold text-brand-navy-dark">
+                      {initials}
+                    </span>
+                  )}
+                  <img
+                    src={leader.image}
+                    alt={`${leader.name} - ${leader.role}`}
+                    className={`w-full h-full object-cover ${imageLoaded ? 'block' : 'hidden'}`}
+                    onLoad={() => setImageLoaded(true)}
+                    onError={() => {
+                      setImageError(true);
+                      setImageLoaded(false);
+                    }}
+                  />
+                </>
+              );
+            };
+
+            return (
+              <motion.div
+                key={leader.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="group p-8 rounded-xl bg-gradient-to-br from-brand-navy-light/50 to-brand-navy-dark/50 border border-brand-navy-light hover:border-brand-cyan/50 transition-all duration-300"
+              >
+                <div className="w-24 h-24 rounded-full mx-auto mb-6 flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-cyan to-brand-cyan-dark">
+                  <LeaderAvatar leader={leader} />
+                </div>
               <h3 className="text-xl font-semibold mb-2 text-center text-white">{leader.name}</h3>
               <p className="text-brand-cyan text-center mb-4 font-medium">{leader.role}</p>
               <p className="text-gray-400 text-center mb-6 text-sm leading-relaxed">{leader.bio}</p>
@@ -86,8 +126,9 @@ export default function Leadership() {
                   </a>
                 )}
               </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
