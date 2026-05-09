@@ -12,6 +12,12 @@ export interface Service {
   icon: string;
 }
 
+export interface Partner {
+  title: string;
+  description: string;
+  image: string;
+  url: string;
+}
 export interface Leader {
   name: string;
   role: string;

@@ -3,6 +3,7 @@ const nextConfig = {
   images: {
     formats: ['image/avif', 'image/webp'],
   },
+  output: 'export'
 }
 
 module.exports = nextConfig
