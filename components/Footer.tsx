@@ -25,7 +25,7 @@ export default function Footer() {
               Innovating beyond boundaries. Empowering businesses with cutting-edge technology solutions.
             </p>
             <div className="flex space-x-4">
-              <a
+              {/* <a
                 href="https://www.linkedin.com/company/infralyft-llc"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -33,16 +33,16 @@ export default function Footer() {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
-              </a>
-              {/* <a
-                href="https://twitter.com/infralyft"
+              </a> */}
+              <a
+                href="https://x.com/infralyft"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-brand-cyan transition-colors"
                 aria-label="Twitter"
               >
                 <Twitter size={20} />
-              </a> */}
+              </a>
               <a
                 href="mailto:admin@infralyft.com"
                 className="text-gray-400 hover:text-brand-cyan transition-colors"
