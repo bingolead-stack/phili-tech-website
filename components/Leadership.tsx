@@ -13,6 +13,12 @@ const leaders: Leader[] = [
     image: "/team/ian-brown.png",
   },
   {
+    name: "Denise Marie Montano",
+    role: "Business Development Manager",
+    bio: "Drives business expansion by building strategic partnerships and helping clients achieve their digital.",
+    image: "/team/denise_marie.png",
+  },
+  {
     name: "Ryan Manarang Maglaqui",
     role: "Strategic Partner",
     bio: "Strategic partner supporting growth and innovation in technology ventures.",
