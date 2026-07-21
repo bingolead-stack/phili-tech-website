@@ -9,12 +9,23 @@ import { useState } from "react";
 
 const partners: Partner[] = [
   {
-    title: "SD SYNNEX",
+    title: "TD SYNNEX",
     description: "TD SYNNEX brings together the most well-known names in IT and emerging technology innovators supported by 23,000 co-workers around the world.",
     image: "/partner_1.jpg",
     url: "https://www.tdsynnex.com/na/us/"
   },
-  
+  {
+    title: "VENMO",
+    description: "Venmo is a fast, secure, and social payment platform that makes sending money, splitting expenses, and shopping easier for millions of users worldwide.",
+    image: "/venmo.png",
+    url: "https://venmo.com/"
+  },
+  {
+    title: "GLOBAL PAYMENT",
+    description: "Global Payments is a global payment technology leader, providing secure, innovative, and seamless payment solutions that help businesses connect with customers and grow worldwide.",
+    image: "/GlobalPayments.jpg",
+    url: "https://www.globalpayments.com/"
+  },
 ];
 export default function Partner() {
   return (
