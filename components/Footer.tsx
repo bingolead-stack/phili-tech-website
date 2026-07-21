@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Linkedin, Twitter, Mail, MapPin, Phone, Clock } from "lucide-react";
+import { Linkedin, TwitterX, Twitter, Mail, MapPin, Phone, Clock } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -41,7 +41,7 @@ export default function Footer() {
                 className="text-gray-400 hover:text-brand-cyan transition-colors"
                 aria-label="Twitter"
               >
-                <Twitter size={20} />
+                <TwitterX size={20} />
               </a>
               <a
                 href="mailto:admin@infralyft.com"
