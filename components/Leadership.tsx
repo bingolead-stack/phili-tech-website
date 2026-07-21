@@ -19,6 +19,12 @@ const leaders: Leader[] = [
     image: "/team/denise_marie.png",
   },
   {
+    name: "Akash Nai",
+    role: "Senior Software Engineer",
+    bio: "Experienced software engineer specializing in designing and developing scalable web applications, cloud-based solutions, and modern software architectures",
+    image: "/team/Akash_Nai.jpg",
+  },
+  {
     name: "Ryan Manarang Maglaqui",
     role: "Strategic Partner",
     bio: "Strategic partner supporting growth and innovation in technology ventures.",
