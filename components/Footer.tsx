@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Phone, Clock, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Clock } from "lucide-react";
+import XLogo from "@/components/icons/XLogo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -39,9 +40,9 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-brand-cyan transition-colors"
-                aria-label="Twitter"
+                aria-label="X (formerly Twitter)"
               >
-                <Twitter size={20} />
+                <XLogo size={20} />
               </a>
               <a
                 href="mailto:admin@infralyft.com"

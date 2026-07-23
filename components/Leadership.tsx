@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Linkedin, Twitter } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import XLogo from "@/components/icons/XLogo";
 import type { Leader } from "@/types";
 
 const leaders: Leader[] = [
@@ -126,9 +127,9 @@ export default function Leadership() {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-400 hover:text-brand-cyan transition-colors"
-                    aria-label={`${leader.name} Twitter`}
+                    aria-label={`${leader.name} on X`}
                   >
-                    <Twitter size={20} />
+                    <XLogo size={20} />
                   </a>
                 )}
               </div>
